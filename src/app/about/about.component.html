@@ -1,0 +1,19 @@
+<p appHighlight>About component</p>
+<p [appHighlight]="myColor">About component</p>
+<p [appHighlight]="'orange'">About component</p>
+<ul [ngSwitch]="loginName">
+    <li *ngSwitchCase="'user'">
+        <p>User is looggerd in ...</p>
+    </li>
+    <li *ngSwitchCase="'admin'">
+        <p>Admon is looggerd in ...</p>
+        <app-home></app-home>
+    </li>
+    <li *ngSwitchDefault>
+        <p>Please choose login name</p>
+    </li>
+</ul>
+
+<span>Counter = {{ counter }}</span>
+<br>
+<span>Counter ^ 2 = {{ counterBinhPhuong }}</span>
