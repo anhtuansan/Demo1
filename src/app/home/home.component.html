@@ -1,0 +1,13 @@
+<h1>Styling Lists With Colors</h1>
+
+Tinh /Thanh pho:
+<select  id="city" (change)="changeCity($event)">
+  <option *ngFor="let data of vietnamData" value="{{data.city}}">{{data.city}}</option>
+</select>
+<br /><br />
+Quan/huyen:
+<select  id="district">
+    <option *ngFor="let district of districts" value="{{district}}">
+        {{district}}
+    </option>
+  </select>
